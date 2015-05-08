@@ -1,0 +1,36 @@
+package InputWithDialog;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
+
+public class InputDialog extends MainFrame{
+
+	private JTextField texte = new JTextField(50);
+	private JButton button = new JButton("save");
+
+	public InputDialog(){
+
+		button.addActionListener(new Save());
+		add(texte);
+		texte.setPreferredSize( new Dimension( 200, 24 ) );
+		add(button, BorderLayout.SOUTH);
+
+		setVisible(true);
+		pack();
+	}
+
+	class Save implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			// TODO Auto-generated method stub
+		}
+	}
+
+}

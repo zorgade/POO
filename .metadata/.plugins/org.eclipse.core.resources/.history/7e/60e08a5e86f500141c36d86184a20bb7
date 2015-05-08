@@ -1,0 +1,36 @@
+package InputWithDialog;
+
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import InputWithDialog.MainFrame.Click;
+
+public class MainDialog extends MainFrame{
+
+
+	private JTextField texte = new JTextField();
+	private JButton button = new JButton("save");
+
+	public MainDialog(){
+
+		button.addActionListener(new Click());
+		add(texte);
+		add(button, BorderLayout.SOUTH);
+
+		setVisible(true);
+		pack();
+	}
+
+	class Click implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			// TODO Auto-generated method stub
+		}
+	}
+}
