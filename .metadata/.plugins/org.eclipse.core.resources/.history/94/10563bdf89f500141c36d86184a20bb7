@@ -15,17 +15,11 @@ public class InputDialog extends JDialog{
 	public InputDialog(){
 
 		button.addActionListener(new Click());
-		
-		setModal(true); //du momeent que la fenetre JDialog est ouverte, on ne peut pas aller vers une autre fenêtre
-		
+	
 		add(input);
 		add(button, BorderLayout.SOUTH);
 
 		pack();
-	}
-	
-	public String getText(){
-		return input.getText();
 	}
 
 	class Click implements ActionListener{
@@ -35,8 +29,7 @@ public class InputDialog extends JDialog{
 			// TODO Auto-generated method stub
 			
 			
-			
-			setVisible(false); //quand on clique sur save, la fenêtre s'efface
+			dispose();
 			
 		}
 	}

@@ -28,10 +28,9 @@ public class MainFrame extends JFrame{
 			
 			d.setVisible(true);
 			
-			label.setText(d.getText()); //on inscrit le texte
+			label.setText(d.getText());
 			
-			d.dispose(); //on kill le JDialog
-			//asjdsd
+			d.dispose();
 		}
 		
 	}

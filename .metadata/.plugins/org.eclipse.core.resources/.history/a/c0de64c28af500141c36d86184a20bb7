@@ -27,11 +27,6 @@ public class MainFrame extends JFrame{
 			InputDialog d = new InputDialog();
 			
 			d.setVisible(true);
-			
-			label.setText(d.getText()); //on inscrit le texte
-			
-			d.dispose(); //on kill le JDialog
-			//asjdsd
 		}
 		
 	}

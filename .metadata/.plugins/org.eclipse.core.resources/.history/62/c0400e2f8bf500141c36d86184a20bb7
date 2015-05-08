@@ -36,7 +36,7 @@ public class InputDialog extends JDialog{
 			
 			
 			
-			setVisible(false); //quand on clique sur save, la fenêtre s'efface
+			setVisible(false);
 			
 		}
 	}
